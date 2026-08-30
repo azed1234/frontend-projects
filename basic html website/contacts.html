@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page to reach out for frontend developer opportunities and collaborations.">
+  <title>Contacts - Cristian Deza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><strong>Cristian Deza</strong></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Contacts</h1>
+      <p>Feel free to reach out using the form below or via my direct email.</p>
+
+      <form action="submit_form.php" method="POST">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email" placeholder="Juandelacruz@gmail.com" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="subject">Subject:</label><br>
+          <input type="subject" id="subject" name="subject" placeholder="Project Inquiry" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea type="message" id="message" name="message" rows="5" cols="30"
+            placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <br>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; All rights reserved 2026</p>
+  </footer>
+
+</body>
+
+</html>
