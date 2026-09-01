@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #4b6494;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.datepicker-wrapper {
+  position: relative;
+  width: 280px;
+}
+
+.input-group {
+  display: flex;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  padding: 10px 12px;
+  font-size: 15px;
+  outline: none;
+  color: #374151;
+}
+
+.calendar-btn {
+  background: #ffffff;
+  border: none;
+  border-left: 2px solid #000000;
+  padding: 0 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.datepicker-popup {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  padding: 12px;
+  box-shadow: 0 4px 6px -1px rbga(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.day-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #4b5563;
+  padding-bottom: 6px;
+}
+
+.day-btn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  padding: 6px 0;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.15s ease;
+}
+
+.day-btn:hover {
+  background-color: #e5e7eb;
+}
