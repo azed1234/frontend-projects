@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 24px 40px;
   background-color: #1e293b;
   border-bottom: 1px solid #334155;
 }
@@ -58,21 +58,22 @@ body {
 
 .tooltip {
   position: absolute;
-  bottom: calc(100% + 12px);
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(6px) scale(0.95);
 
   background-color: #000000;
   color: #ffffff;
-  border: 8px;
-  padding: 8px 14px;
+  border-radius: 8px;
+  padding: 8px 12px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 10;
 
   transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
 }
@@ -80,13 +81,13 @@ body {
 .tooltip::after {
   content: '';
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
 
-  border-width: 6px 6px 0 6px;
+  border-width: 0 5px 5px 5px;
   border-style: solid;
-  border-color: #000000 transparent transparent transparent;
+  border-color: transparent transparent #000000 transparent;
 }
 
 .nav-item:hover .tooltip,
