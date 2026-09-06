@@ -1,4 +1,4 @@
-const cookieCard = document.getElementById('cookie-card');
+const cookieCard = document.getElementById('cookieCard');
 const acceptBtn = document.getElementById('acceptBtn');
 const closeBtn = document.getElementById('closeBtn');
 
