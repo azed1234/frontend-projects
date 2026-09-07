@@ -5,10 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <div class="textarea-container">
+    <label for="user-message">Write your Message</label>
+
+    <div class="input-wrapper" id="wrapper">
+      <textarea id="user-message" maxlength="250" placeholder="Start typing . . ." aria-describedby="char-counter">
+     </textarea>
+
+      <div id="char-counter" class="counter" aria-live="polite">
+        <span>0</span> / 250
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
