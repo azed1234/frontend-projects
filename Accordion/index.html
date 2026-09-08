@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="accordion-container">
+    <h1> Frequently Asked Questions</h1>
+    <p class="subtitle">here are some of the frequently asked questions</p>
+
+    <div class="accordion">
+      <!-- item 1 -->
+      <div class="accordion-item active">
+        <button class="accordion-header" aria-expanded="true" aria-controls="content-1" id="accordion-1">
+          <span>What is roadmap.sh?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-1" class="accordion-content" role="region" aria-labelledby="accordion-1">
+          <p>roadmap.sh is a community effort to create learning paths, guides, project ideas and other similar content
+            to help developers grow in their careers.</p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="content-2" id="accordion-2">
+          <span>What are the plans for roadmap.sh?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-2" class="accordion-content" role="region" aria-labelledby="accordion-2">
+          <p>Plans include adding more detailed visual roadmaps, expanding project ideas, and introducing interactive
+            practice modules.</p>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="content-3" id="accordion-3">
+          <span>How is roadmap.sh built?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-3" class="accordion-content" role="region" aria-labelledby="accordion-3">
+          <p>It is built as an open-source project using modern web frameworks and community contributions hosted on
+            GitHub.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="content-4" id="accordion-4">
+          <span>Can I use roadmap.sh in my team?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-4" class="accordion-content" role="region" aria-labelledby="accordion-4">
+          <p>Yes, roadmap.sh content is public and open-source, allowing teams to use it for internal onboarding and
+            skill tracking.</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="content-5" id="accordion-5">
+          <span>How can I create custom roadmaps?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-5" class="accordion-content" role="region" aria-labelledby="accordion-5">
+          <p>You can create custom roadmaps using the provided editor features or by contributing directly to the
+            repository.</p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="content-6" id="accordion-6">
+          <span>Is roadmap.sh really 7th most starred project on GitHub?</span>
+          <span class="icon" aria-hidden="true">&#x2304;</span>
+        </button>
+        <div id="content-6" class="accordion-content" role="region" aria-labelledby="accordion-6">
+          <p>Yes, roadmap.sh is consistently ranked among the top open-source projects on GitHub due to its massive
+            developer community.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
